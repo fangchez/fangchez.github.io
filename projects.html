@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://getbootstrap.com/examples/dashboard/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Fangcheng Zhu's Homepage | CS Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./bootstrap/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Fangcheng Zhu</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="downloads/FangchengZhu_Resume.pdf">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="index.html">About Me</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="projects.html">CS Projects <span class="sr-only">(current)</span></a></li>
+            <li><a id="link1">Distributed Systems</a></li>
+            <li><a id="link2">Utility Softwares</a></li>
+            <li><a id="link3">Linux System Projects</a></li>
+            <li><a id="link4">Web Applications</a></li>
+            <li><a id="link5">Machine Learning</a></li>
+            <li><a id="link6">Fun</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="experiences.html">Experiences</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">CS Projects <small>My course and hobby projects</small></h1>
+
+          <div id="l1" class="jumbotron">
+            <h2>Distributed Systems</h2>
+            <p>From CMU's course 15-640 in Spring 2017</p>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Two-phase Commit for Group Photo (Java) <span class="badge">May 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Implemented a 2-phase commit photo system to publish group collages assembled from multiple contributors</li>
+               <li>Achieved robustness to lost messages and to node failures/reboots using customized operation logging protocol</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Scalable Cloud Service (Java) <span class="badge">Mar 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Designed a 3-tier simulated cloud service to handle browse and purchase requests for a simulated online store</li>
+               <li>Increased system efficiency by dynamically scaling front/middle tiers separately based on real-time demands</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">File-Caching Proxy (C, Java) <span class="badge">Jan 2017 - Feb 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Constructed a low-latency distributed file system that allows concurrent remote clients to perform standard C file operations on a remote server through caching proxies</li>
+               <li>Built an RPC protocol in place of C library to let unmodified programs access the remote service over TCP</li>
+               <li>Reduced latency and data transfer by implementing a LRU cache on proxy with one-copy semantics</li>
+              </ul>
+            </div>
+          </div><br>
+
+          <div id="l2" class="jumbotron">
+            <h2>Utility Softwares</h2>
+            <p>Some projects are for productivity</p>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Superlime – A Cross-platform Java Cloud IDE (Qt) <span class="badge">Feb 2017 - Apr 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Designed a client side development tool for editing and running Java programs without having to install JDK</li>
+               <li>Deployed a long-running TCP server that could process concurrent client compilation requests on Amazon EC2</li>
+               <li>Download here:
+                 <a href="downloads/Superlime_Windows.zip"><button class="btn btn-success" type="button">Windows</button></a>
+                 <a href="downloads/Superlime_macOS.dmg"><button class="btn btn-success" type="button">macOS</button></a>
+                 <a href="downloads/Superlime_Linux.tar"><button class="btn btn-success" type="button">Linux</button></a>
+                 <a href="downloads/Superlime_Server_Windows.zip"><button class="btn btn-primary" type="button">Server (Windows)</button></a>
+                 <a href="downloads/Superlime_Server_Linux.tar"><button class="btn btn-primary" type="button">Server (Linux)</button></a>
+               </li>
+              </ul>
+            </div>
+          </div><br>
+
+          <div id="l3" class="jumbotron">
+            <h2>Linux System Projects</h2>
+            <p>From CMU's course 15-213 in Fall 2016</p>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Caching Web Proxy (C) <span class="badge">Dec 2016</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Designed a multi-threaded HTTP proxy to read and handle concurrent HTTP/1.0 GET requests</li>
+               <li>Implemented a LRU cache with multiple-reader-single-writer synchronization mechanism to store web objects</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dynamic Storage Allocator (C) <span class="badge">Nov 2016</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Implemented a general purpose dynamic storage allocator for C programs to support malloc, free, realloc, and calloc functions, as well as a comprehensive heap checker to ensure proper alignment of the heap region</li>
+               <li>Optimized usage rate using segmented explicit list to allocate memory space, and improved throughput with modified first-fit policy to search for memory blocks</li>
+               <li>Achieved high utilization (74.5%) and throughput performance (22,172 kops) on standard benchmark traces</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Simple Linux Shell (C) <span class="badge">Oct 2016</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Constructed a basic Linux shell that supports job control, I/O redirection, foreground-background job status switch, and automatic zombie child process reaping</li>
+               <li>Installed SIGCHLD, SIGINT, and SIGTSTP signal handlers to avoid race conditions between different tasks</li>
+              </ul>
+            </div>
+          </div><br>
+
+
+          <div id="l4" class="jumbotron">
+            <h2>Web Applications</h2>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Smart Live Web Application (Laravel) <span class="badge">Mar 2017 – May 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Full stack developed an interactive housing listing/rating social website similar to Airbnb</li>
+               <li>Implemented user registration/authentication, 3-catagory friend circles, photo uploads, and quasi-real-time updates for comments/ratings</li>
+              </ul>
+            </div>
+          </div><br>
+
+
+          <div id="l5" class="jumbotron">
+            <h2>Machine Learning</h2>
+            <p>A collaborative ML project with industrial applications</p>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Hand Gesture Prediction with a Limited Number of Strain Gauge Sensors <span class="badge">Jan 2017 – May 2017</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Engineered a wearable glove with a limited number of strain gauge sensors to recognize hand gestures in real time with high accuracy</li>
+               <li>Applied linear/quadratic regression and neural network models to predict knuckle angles by mapping from lower-dimensional strain gauge data to higher-dimensional hand knuckle angles</li>
+               <li>Designed a real-time hand gesture visualization application in JavaFX using data from Leap Motion&reg; controller or strain gauges connected to Arduino&reg;</li>
+               <li>Links here:
+                <a href="downloads/hand_tracking.pdf"><button class="btn btn-success" type="button">Published Paper</button></a></li>
+               <li>Watch the wearable glove in training: </li>
+               <div class="embed-responsive embed-responsive-16by9">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tnnlwg5KoXg"></iframe>
+              </div>
+              </ul>
+            </div>
+          </div><br>
+
+
+          <div id="l6" class="jumbotron">
+            <h2>Fun</h2>
+            <p>More projects just for fun</p>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">CMU Big Adventure Game Design (C++) <span class="badge">Oct 2016 – Nov 2016</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Designed a PC game similar to Nintendo’s Pokemon handheld console game</li>
+               <li>Built an interactive caption system using OpenGL to let users control dynamic game captions</li>
+               <li>Download here:
+                <a href="downloads/CBA_Windows.zip"><button class="btn btn-success" type="button">Windows</button></a>
+                <a href="downloads/CBA_macOS.zip"><button class="btn btn-success" type="button">macOS</button></a></li>
+               <li>Watch the trailer here: </li>
+               <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6IbSY6Kz5n4"></iframe>
+              </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Virtual View-Master Simulator (JavaScript) <span class="badge">Nov 2014 – Dec 2014</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+               <li>Designed a virtual View-Master simulator to interact with user inputs and switch between 3 realistic scenes</li>
+               <li>Realized 2D/3D graphics on Safari and Chrome web browsers using WebGL and JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./bootstrap/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./bootstrap/ie10-viewport-bug-workaround.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="bootstrap/scrollpoly.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('link1').addEventListener('click', function() {
+                document.getElementById('l1').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+
+            document.getElementById('link2').addEventListener('click', function() {
+                document.getElementById('l2').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+
+            document.getElementById('link3').addEventListener('click', function() {
+                document.getElementById('l3').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+
+            document.getElementById('link4').addEventListener('click', function() {
+                document.getElementById('l4').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+
+            document.getElementById('link5').addEventListener('click', function() {
+                document.getElementById('l5').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+
+            document.getElementById('link6').addEventListener('click', function() {
+                document.getElementById('l6').scrollIntoView({
+                   behavior: 'smooth'
+               });
+            });
+        });
+    </script>
+
+</body></html>
